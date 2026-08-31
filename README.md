@@ -154,13 +154,15 @@ Mede a percepção de quem participa dos cursos e palestras: nota média, volume
 
 ## Ferramentas e gestão
 
-Implementei metodologia ágil na divisão (a ilha, não o setor inteiro), junto com a adoção do Jira: sprints, one pager, cerimônias ágeis e daily.
+**Metodologia ágil na divisão.** Implementei o Jira e a rotina ágil na ilha (não no setor inteiro): sprints, one pager, daily e as demais cerimônias. A demanda antes chegava por conversa e e-mail, sem fila visível nem noção de prioridade. Com o board, dá para dizer o que está em andamento, o que está parado esperando terceiros e o que entra na próxima sprint.
 
-Criei também o repositório GitHub organizacional para documentação e continuidade dos projetos, e elaboro relatórios periódicos apresentados para a diretoria, com participação em reuniões de alinhamento de demandas.
+**Versionamento com GitHub Flow.** Criei o repositório organizacional e adotei GitHub Flow como padrão de trabalho: branch por demanda, pull request e merge na main. Uso diário. Num setor onde o código antes vivia na máquina de quem escreveu, isso resolve o problema real de continuidade: quando um estagiário sai, a automação continua rodando e alguém consegue retomá-la.
+
+**Relatórios.** Elaboro relatórios periódicos apresentados para a diretoria, com participação em reuniões de alinhamento de demandas.
 
 ## Stack
 
-Python, Selenium, Pandas, gspread, SQL, Google Apps Script, Google Workspace, Looker Studio, Moodle, Bizagi (BPMN), Jira, Git e GitHub.
+Python, Selenium, Pandas, gspread, SQL, Google Apps Script, Google Workspace, Looker Studio, Moodle, Bizagi (BPMN), Jira, Scrum, Git e GitHub (GitHub Flow).
 
 ## Nota de confidencialidade
 
