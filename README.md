@@ -124,7 +124,11 @@ A saída fácil seria normalizar tudo a cada carga, para sempre. Em vez disso, o
 
 ### Os painéis
 
-São 7 dashboards no total, apresentados para a diretoria e chefes de setor. O Looker Studio foi a escolha por já estar dentro do Google Workspace usado pelo órgão, o que evita custo de licença nova e mantém o dado na mesma conta corporativa onde ele já vive. Três deles:
+São 7 dashboards no total, apresentados para a diretoria e chefes de setor. O Looker Studio foi a escolha por já estar dentro do Google Workspace usado pelo órgão, o que evita custo de licença nova e mantém o dado na mesma conta corporativa onde ele já vive.
+
+Boa parte do indicador não vem pronto da origem. Taxas, agrupamentos e comparativos entre períodos são derivados com **SQL**, em campos calculados e consultas nas fontes de dados, antes de virar gráfico.
+
+Cinco dos painéis:
 
 #### Alcance e ações educativas
 
@@ -145,6 +149,25 @@ Consolida o gasto com viagens: total, número de solicitações e ticket médio.
 ![Dashboard de relatório de viagens](img/dashboard-viagens.png)
 
 *Valores ocultados por se tratar de despesa institucional. A estrutura do painel é a mesma.*
+
+#### Óbitos no trânsito
+
+O painel que exige mais método. Não basta mostrar quantas mortes houve no período: a pergunta que a gestão faz é
+se o número está subindo ou caindo, e se a variação do mês é sinal de tendência ou apenas oscilação normal.
+
+Por isso a análise usa a dimensão temporal de verdade:
+
+- **Linha de tendência** sobre a série, para separar a direção do ruído mês a mês
+- **Sazonalidade**, identificando os períodos que concentram ocorrências
+- **Comparação período a período**, contra o mês anterior e contra o mesmo período do ano anterior
+
+É a diferença entre um painel que informa e um que sustenta decisão de política pública.
+
+#### Projeção de conclusão de cursos
+
+Acompanha inscritos e concluintes com **projeção** do resultado final e comparação contra a meta de conclusão,
+respondendo durante o período se o ritmo atual chega no objetivo, em vez de constatar o resultado no fim,
+quando não dá mais para agir.
 
 #### Pesquisa de satisfação de cursos e palestras
 
