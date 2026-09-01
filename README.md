@@ -178,6 +178,8 @@ Acompanha inscritos e concluintes com **projeção** do resultado final e compar
 respondendo durante o período se o ritmo atual chega no objetivo, em vez de constatar o resultado no fim,
 quando não dá mais para agir.
 
+*Painel sem captura: trabalha com dados individualizados de alunos, que não podem ser expostos.*
+
 #### Pesquisa de satisfação de cursos e palestras
 
 Mede a percepção de quem participa dos cursos e palestras: nota média, volume de respostas e avaliação por curso. Além da nota geral, separa clareza e didática da comunicação, aplicabilidade prática e relevância do conteúdo, que são dimensões que exigem ação diferente quando caem.
