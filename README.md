@@ -152,16 +152,25 @@ Consolida o gasto com viagens: total, número de solicitações e ticket médio.
 
 #### Óbitos no trânsito
 
-O painel que exige mais método. Não basta mostrar quantas mortes houve no período: a pergunta que a gestão faz é
-se o número está subindo ou caindo, e se a variação do mês é sinal de tendência ou apenas oscilação normal.
+O painel que exige mais método. Não basta mostrar quantas mortes houve no ano: a pergunta que a gestão faz é se o
+número está caindo de verdade, e se a variação de um ano é sinal de tendência ou apenas oscilação.
 
-Por isso a análise usa a dimensão temporal de verdade:
+A análise cobre 19 anos de série histórica (2006 a 2024) sobre dados do DATASUS, consolidados para os seis
+municípios de maior porte do estado, e usa a dimensão temporal de verdade:
 
-- **Linha de tendência** sobre a série, para separar a direção do ruído mês a mês
-- **Sazonalidade**, identificando os períodos que concentram ocorrências
-- **Comparação período a período**, contra o mês anterior e contra o mesmo período do ano anterior
+- **Tendência** ao longo da série inteira, separando a direção do ruído ano a ano
+- **Médias por período**, agrupando 2006 a 2010, 2011 a 2020 e 2021 a 2024 para comparar patamares em vez de
+  pontos isolados
+- **Comparação período a período** em variação percentual, que é o número que a gestão de fato usa
+- **Recortes por município e por modal** (automóvel, pedestre, motociclista, ciclista), porque a política de
+  prevenção muda conforme quem está morrendo
 
-É a diferença entre um painel que informa e um que sustenta decisão de política pública.
+O resultado consolidado mostra queda de 33,85% entre 2006 e 2024. É a diferença entre um painel que informa e um
+que sustenta decisão de política pública.
+
+![Dashboard de óbitos de trânsito com série histórica e comparação entre períodos](img/dashboard-obitos.png)
+
+*Dados públicos, fonte DATASUS.*
 
 #### Projeção de conclusão de cursos
 
